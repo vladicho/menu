@@ -2,22 +2,22 @@
 
 Landing page e inventário vivo dos subdomínios de `lugarerrado.com`.
 
-## Como funciona
+## Fonte dos dados
+
+O workflow cruza os registros DNS da zona Cloudflare com os repositórios públicos do usuário `vladicho`. Por convenção, um repo chamado `training` documenta `training.lugarerrado.com`. A descrição exibida vem do primeiro parágrafo do `README.md` desse repo; quando não há README, usa a descrição do GitHub ou “A confirmar”.
+
+## Arquivos
 
 - `index.html`: mapa, busca, filtros e linha do tempo.
-- `data/subdomains.json`: hosts, descrições e histórico exibidos na página.
-- `scripts/sync-subdomains.mjs`: lê os registros DNS da zona Cloudflare.
+- `data/subdomains.json`: hosts, descrições e histórico exibidos.
+- `scripts/sync-subdomains.mjs`: lê DNS e READMEs do GitHub.
 - `.github/workflows/sync-subdomains.yml`: sincronização diária e manual.
 
-## Ativar a descoberta automática
+## Secrets necessários
 
-No repositório do GitHub, crie estes Actions secrets:
+Em `Settings → Secrets and variables → Actions`, crie:
 
-- `CLOUDFLARE_API_TOKEN`: token com permissão **Zone → DNS → Read** apenas para `lugarerrado.com`.
-- `CLOUDFLARE_ZONE_ID`: ID da zona `lugarerrado.com`, visível no painel Overview do Cloudflare.
+- `CLOUDFLARE_API_TOKEN`: token com **Zone → DNS → Read** apenas para `lugarerrado.com`.
+- `CLOUDFLARE_ZONE_ID`: ID da zona `lugarerrado.com` no Cloudflare.
 
-O workflow roda diariamente e também pode ser executado em **Actions → Sync subdomains → Run workflow**. Subdomínios novos entram como “A confirmar”; descrições e funções continuam sendo documentadas manualmente no JSON.
-
-## Limite importante
-
-O DNS consegue dizer que um subdomínio existe, mas não sabe explicar o que ele faz. Por isso novos hosts são descobertos automaticamente, enquanto a descrição começa como “A confirmar”.
+`GITHUB_TOKEN` já é fornecido automaticamente pelo GitHub Actions. O workflow roda diariamente e também pode ser executado em `Actions → Sync subdomains → Run workflow`.

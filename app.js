@@ -12,7 +12,8 @@ function render() {
   });
   cards.innerHTML = shown.map(host => {
     const state = host.online === true ? 'respondendo' : host.online === false ? '404 / atenção' : 'DNS detectado';
-    return `<article class="card"><div class="card-top"><span class="tag">${host.categoryLabel}</span><span class="status ${host.online === true ? '' : 'off'}">${state}</span></div><h3>${host.host}</h3><p>${host.description}</p><div class="card-foot"><span>visto ${host.lastSeen || '—'}</span><a href="https://${host.host}.lugarerrado.com" target="_blank" rel="noreferrer">abrir ↗</a></div></article>`;
+    const repoLink = host.repoUrl ? ` · <a href="${host.repoUrl}" target="_blank" rel="noreferrer">repo ↗</a>` : '';
+    return `<article class="card"><div class="card-top"><span class="tag">${host.categoryLabel}</span><span class="status ${host.online === true ? '' : 'off'}">${state}</span></div><h3>${host.host}</h3><p>${host.description}</p><div class="card-foot"><span>visto ${host.lastSeen || '—'}</span><span><a href="https://${host.host}.lugarerrado.com" target="_blank" rel="noreferrer">abrir ↗</a>${repoLink}</span></div></article>`;
   }).join('');
   document.querySelector('#empty').hidden = shown.length > 0;
   document.querySelector('#total-count').textContent = activeHosts.length;
