@@ -1,33 +1,291 @@
 {
-  "updatedAt": "2026-08-01",
+  "updatedAt": "2026-08-02",
   "hosts": [
-    {"host":"www","category":"known","categoryLabel":"Entrada principal","description":"A porta de login do MoldeLab, o produto central do domínio.","online":true,"active":true,"lastSeen":"05 jul 2026"},
-    {"host":"about","category":"known","categoryLabel":"Apresentação","description":"Landing page do MoldeLab: digitalização e encaixe de moldes.","online":true,"active":true,"lastSeen":"29 jun 2026"},
-    {"host":"training","category":"known","categoryLabel":"Aprendizado","description":"Conteúdos, questionários e desafios de lógica de programação.","online":true,"active":true,"lastSeen":"30 jul 2026"},
-    {"host":"gossip","category":"known","categoryLabel":"Conteúdo","description":"Publicação e arquivo de notícias e itens do projeto Gossip Unitel.","online":true,"active":true,"lastSeen":"31 jul 2026"},
-    {"host":"feed","category":"attention","categoryLabel":"A confirmar","description":"Provável feed ou ingestão de conteúdo; função ainda precisa ser documentada.","online":true,"active":true,"lastSeen":"12 jul 2026"},
-    {"host":"challenge","category":"attention","categoryLabel":"A confirmar","description":"Provável área de desafios, testes ou exercícios do ecossistema.","online":true,"active":true,"lastSeen":"12 jul 2026"},
-    {"host":"learning","category":"attention","categoryLabel":"A confirmar","description":"Provável área de aprendizagem ou trilhas de conteúdo.","online":true,"active":true,"lastSeen":"12 jul 2026"},
-    {"host":"appstore","category":"attention","categoryLabel":"A confirmar","description":"Provável catálogo ou distribuição de aplicações.","online":true,"active":true,"lastSeen":"12 jul 2026"},
-    {"host":"market","category":"attention","categoryLabel":"A confirmar","description":"Provável área comercial, marketplace ou catálogo de ofertas.","online":true,"active":true,"lastSeen":"12 jul 2026"},
-    {"host":"troubleshooting","category":"attention","categoryLabel":"A confirmar","description":"Provável central de diagnóstico e resolução de problemas.","online":true,"active":true,"lastSeen":"12 jul 2026"},
-    {"host":"networking","category":"attention","categoryLabel":"A confirmar","description":"Provável área de rede, integrações ou conexão entre serviços.","online":true,"active":true,"lastSeen":"12 jul 2026"},
-    {"host":"admin","category":"attention","categoryLabel":"A confirmar","description":"Provável painel administrativo interno. Acesso deve ser protegido.","online":true,"active":true,"lastSeen":"12 jul 2026"},
-    {"host":"hub","category":"attention","categoryLabel":"A confirmar","description":"Provável ponto de entrada ou hub de ferramentas.","online":true,"active":true,"lastSeen":"12 jul 2026"},
-    {"host":"endcustomer","category":"attention","categoryLabel":"A confirmar","description":"Provável experiência voltada ao cliente final.","online":true,"active":true,"lastSeen":"12 jul 2026"},
-    {"host":"partnership","category":"attention","categoryLabel":"A confirmar","description":"Provável área de parcerias e relacionamento.","online":true,"active":true,"lastSeen":"12 jul 2026"},
-    {"host":"embeddedsearchengine","category":"attention","categoryLabel":"A confirmar","description":"Provável mecanismo de busca embutido em outros produtos.","online":true,"active":true,"lastSeen":"12 jul 2026"},
-    {"host":"documentation","category":"attention","categoryLabel":"A confirmar","description":"Provável documentação técnica ou de produto.","online":true,"active":true,"lastSeen":"12 jul 2026"},
-    {"host":"teams","category":"attention","categoryLabel":"A confirmar","description":"Provável área de times, colaboração ou organizações.","online":true,"active":true,"lastSeen":"12 jul 2026"},
-    {"host":"insights","category":"attention","categoryLabel":"A confirmar","description":"Provável painel de métricas, análises ou insights.","online":true,"active":true,"lastSeen":"12 jul 2026"},
-    {"host":"test","category":"attention","categoryLabel":"Arquivo / atenção","description":"Certificado público recente, mas a rota respondeu 404 na verificação.","online":false,"active":true,"lastSeen":"23 jul 2026"}
+    {
+      "host": "about",
+      "category": "known",
+      "categoryLabel": "Apresentação",
+      "description": "Landing page do MoldeLab: digitalização e encaixe de moldes.",
+      "online": true,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    },
+    {
+      "host": "admin",
+      "category": "attention",
+      "categoryLabel": "A confirmar",
+      "description": "Provável painel administrativo interno. Acesso deve ser protegido.",
+      "online": true,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    },
+    {
+      "host": "appstore",
+      "category": "attention",
+      "categoryLabel": "A confirmar",
+      "description": "Provável catálogo ou distribuição de aplicações.",
+      "online": true,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    },
+    {
+      "host": "challenge",
+      "category": "attention",
+      "categoryLabel": "A confirmar",
+      "description": "Provável área de desafios, testes ou exercícios do ecossistema.",
+      "online": true,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    },
+    {
+      "host": "documentation",
+      "category": "attention",
+      "categoryLabel": "A confirmar",
+      "description": "Provável documentação técnica ou de produto.",
+      "online": true,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    },
+    {
+      "host": "embeddedsearchengine",
+      "category": "attention",
+      "categoryLabel": "A confirmar",
+      "description": "Provável mecanismo de busca embutido em outros produtos.",
+      "online": true,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    },
+    {
+      "host": "endcustomer",
+      "category": "attention",
+      "categoryLabel": "A confirmar",
+      "description": "Provável experiência voltada ao cliente final.",
+      "online": true,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    },
+    {
+      "host": "feed",
+      "category": "attention",
+      "categoryLabel": "A confirmar",
+      "description": "Provável feed ou ingestão de conteúdo; função ainda precisa ser documentada.",
+      "online": true,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    },
+    {
+      "host": "gossip",
+      "category": "known",
+      "categoryLabel": "Conteúdo",
+      "description": "Arquivo diário de descobertas públicas das áreas de entretenimento da Unitel.",
+      "online": true,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": "https://github.com/vladicho/gossip"
+    },
+    {
+      "host": "hub",
+      "category": "attention",
+      "categoryLabel": "A confirmar",
+      "description": "Provável ponto de entrada ou hub de ferramentas.",
+      "online": true,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    },
+    {
+      "host": "insights",
+      "category": "attention",
+      "categoryLabel": "A confirmar",
+      "description": "Provável painel de métricas, análises ou insights.",
+      "online": true,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    },
+    {
+      "host": "learning",
+      "category": "attention",
+      "categoryLabel": "A confirmar",
+      "description": "Provável área de aprendizagem ou trilhas de conteúdo.",
+      "online": true,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    },
+    {
+      "host": "market",
+      "category": "attention",
+      "categoryLabel": "A confirmar",
+      "description": "Provável área comercial, marketplace ou catálogo de ofertas.",
+      "online": true,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    },
+    {
+      "host": "menu",
+      "category": "attention",
+      "categoryLabel": "A confirmar",
+      "description": "Subdomínio detectado no DNS; função ainda não documentada.",
+      "online": null,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    },
+    {
+      "host": "networking",
+      "category": "attention",
+      "categoryLabel": "A confirmar",
+      "description": "Provável área de rede, integrações ou conexão entre serviços.",
+      "online": true,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    },
+    {
+      "host": "paper",
+      "category": "attention",
+      "categoryLabel": "A confirmar",
+      "description": "Subdomínio detectado no DNS; função ainda não documentada.",
+      "online": null,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    },
+    {
+      "host": "partnership",
+      "category": "attention",
+      "categoryLabel": "A confirmar",
+      "description": "Provável área de parcerias e relacionamento.",
+      "online": true,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    },
+    {
+      "host": "rdp",
+      "category": "attention",
+      "categoryLabel": "A confirmar",
+      "description": "Subdomínio detectado no DNS; função ainda não documentada.",
+      "online": null,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    },
+    {
+      "host": "teams",
+      "category": "attention",
+      "categoryLabel": "A confirmar",
+      "description": "Provável área de times, colaboração ou organizações.",
+      "online": true,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    },
+    {
+      "host": "test",
+      "category": "attention",
+      "categoryLabel": "Arquivo / atenção",
+      "description": "Certificado público recente, mas a rota respondeu 404 na verificação.",
+      "online": false,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    },
+    {
+      "host": "training",
+      "category": "known",
+      "categoryLabel": "Aprendizado",
+      "description": "Questionário interativo em Astro sobre pseudocódigo, algoritmos e lógica de programação.",
+      "online": true,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": "https://github.com/vladicho/training"
+    },
+    {
+      "host": "troubleshooting",
+      "category": "attention",
+      "categoryLabel": "A confirmar",
+      "description": "Provável central de diagnóstico e resolução de problemas.",
+      "online": true,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    },
+    {
+      "host": "www",
+      "category": "known",
+      "categoryLabel": "Entrada principal",
+      "description": "A porta de login do MoldeLab, o produto central do domínio.",
+      "online": true,
+      "active": true,
+      "lastSeen": "2026-08-02",
+      "repoUrl": null
+    }
   ],
   "events": [
-    {"date":"31 jul 2026","host":"gossip","title":"Novo sinal público","description":"Certificado emitido para gossip; o projeto também já tem arquivo diário local."},
-    {"date":"30 jul 2026","host":"training","title":"Novo sinal público","description":"Certificado emitido para training; a página respondeu com conteúdo de aprendizagem."},
-    {"date":"23 jul 2026","host":"test","title":"Mudança / atenção","description":"test apareceu em certificado SNI da Cloudflare, mas retornou 404 na verificação atual."},
-    {"date":"12 jul 2026","host":"vários hosts","title":"Expansão do mapa","description":"Uma rodada de certificados passou a registrar 15 áreas nomeadas do ecossistema."},
-    {"date":"05 jul 2026","host":"www","title":"Entrada principal","description":"www apareceu com certificado próprio e respondeu como porta de entrada do MoldeLab."},
-    {"date":"29 jun 2026","host":"about","title":"Primeiro marco visível","description":"about apareceu como página de apresentação; também marca o primeiro certificado desta rodada."}
+    {
+      "date": "2026-08-02",
+      "host": "rdp",
+      "title": "Novo subdomínio detectado",
+      "description": "O DNS do Cloudflare passou a registrar este host. A função será descrita a partir do README do repositório correspondente."
+    },
+    {
+      "date": "2026-08-02",
+      "host": "paper",
+      "title": "Novo subdomínio detectado",
+      "description": "O DNS do Cloudflare passou a registrar este host. A função será descrita a partir do README do repositório correspondente."
+    },
+    {
+      "date": "2026-08-02",
+      "host": "menu",
+      "title": "Novo subdomínio detectado",
+      "description": "O DNS do Cloudflare passou a registrar este host. A função será descrita a partir do README do repositório correspondente."
+    },
+    {
+      "date": "31 jul 2026",
+      "host": "gossip",
+      "title": "Novo sinal público",
+      "description": "Certificado emitido para gossip; o projeto também já tem arquivo diário local."
+    },
+    {
+      "date": "30 jul 2026",
+      "host": "training",
+      "title": "Novo sinal público",
+      "description": "Certificado emitido para training; a página respondeu com conteúdo de aprendizagem."
+    },
+    {
+      "date": "23 jul 2026",
+      "host": "test",
+      "title": "Mudança / atenção",
+      "description": "test apareceu em certificado SNI da Cloudflare, mas retornou 404 na verificação atual."
+    },
+    {
+      "date": "12 jul 2026",
+      "host": "vários hosts",
+      "title": "Expansão do mapa",
+      "description": "Uma rodada de certificados passou a registrar 15 áreas nomeadas do ecossistema."
+    },
+    {
+      "date": "05 jul 2026",
+      "host": "www",
+      "title": "Entrada principal",
+      "description": "www apareceu com certificado próprio e respondeu como porta de entrada do MoldeLab."
+    },
+    {
+      "date": "29 jun 2026",
+      "host": "about",
+      "title": "Primeiro marco visível",
+      "description": "about apareceu como página de apresentação; também marca o primeiro certificado desta rodada."
+    }
   ]
 }
