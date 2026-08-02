@@ -1,17 +1,23 @@
 # menu
 
-Landing page / inventário dos subdomínios de `lugarerrado.com`.
+Landing page e inventário vivo dos subdomínios de `lugarerrado.com`.
 
-## O que existe aqui
+## Como funciona
 
-- `index.html`: página única com mapa, busca, filtros e linha do tempo.
-- `styles.css`: direção visual responsiva.
-- `app.js`: dados dos hosts e eventos públicos do inventário.
+- `index.html`: mapa, busca, filtros e linha do tempo.
+- `data/subdomains.json`: hosts, descrições e histórico exibidos na página.
+- `scripts/sync-subdomains.mjs`: lê os registros DNS da zona Cloudflare.
+- `.github/workflows/sync-subdomains.yml`: sincronização diária e manual.
 
-## Como atualizar
+## Ativar a descoberta automática
 
-Edite os arrays `hosts` e `events` em `app.js`. A página separa funções confirmadas de hipóteses e mostra o status HTTPS observado em 01/08/2026.
+No repositório do GitHub, crie estes Actions secrets:
 
-## Nota de inventário
+- `CLOUDFLARE_API_TOKEN`: token com permissão **Zone → DNS → Read** apenas para `lugarerrado.com`.
+- `CLOUDFLARE_ZONE_ID`: ID da zona `lugarerrado.com`, visível no painel Overview do Cloudflare.
 
-Os hosts foram reunidos a partir de registros públicos de certificados e de uma verificação HTTPS. Certificado não prova que um serviço esteja em uso; nomes sem documentação foram mantidos como “A confirmar”.
+O workflow roda diariamente e também pode ser executado em **Actions → Sync subdomains → Run workflow**. Subdomínios novos entram como “A confirmar”; descrições e funções continuam sendo documentadas manualmente no JSON.
+
+## Limite importante
+
+O DNS consegue dizer que um subdomínio existe, mas não sabe explicar o que ele faz. Por isso novos hosts são descobertos automaticamente, enquanto a descrição começa como “A confirmar”.

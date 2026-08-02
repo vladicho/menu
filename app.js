@@ -1,5 +1,32 @@
-const hosts=[['www','Entrada principal','A porta de login do MoldeLab, o produto central do domínio.','known',true,'MoldeLab · Entrar','05 jul 2026'],['about','Apresentação','Landing page do MoldeLab: digitalização e encaixe de moldes.','known',true,'Do papel ao digital','29 jun 2026'],['training','Aprendizado','Conteúdos, questionários e desafios de lógica de programação.','known',true,'Training · Lógica de programação','30 jul 2026'],['gossip','Conteúdo','Publicação/arquivo de notícias e itens do projeto Gossip Unitel.','known',true,'Gossip · Unitel','31 jul 2026'],['feed','A confirmar','Provável feed ou ingestão de conteúdo; nome aparece em certificado público.','attention',true,'feed.lugarerrado.com','12 jul 2026'],['challenge','A confirmar','Provável área de desafios, testes ou exercícios do ecossistema.','attention',true,'challenge.lugarerrado.com','12 jul 2026'],['learning','A confirmar','Provável área de aprendizagem ou trilhas de conteúdo.','attention',true,'learning.lugarerrado.com','12 jul 2026'],['appstore','A confirmar','Provável catálogo ou distribuição de aplicações.','attention',true,'appstore.lugarerrado.com','12 jul 2026'],['market','A confirmar','Provável área comercial, marketplace ou catálogo de ofertas.','attention',true,'market.lugarerrado.com','12 jul 2026'],['troubleshooting','A confirmar','Provável central de diagnóstico e resolução de problemas.','attention',true,'troubleshooting.lugarerrado.com','12 jul 2026'],['networking','A confirmar','Provável área de rede, integrações ou conexão entre serviços.','attention',true,'networking.lugarerrado.com','12 jul 2026'],['admin','A confirmar','Provável painel administrativo interno. Acesso deve ser protegido.','attention',true,'admin.lugarerrado.com','12 jul 2026'],['hub','A confirmar','Provável ponto de entrada ou hub de ferramentas.','attention',true,'hub.lugarerrado.com','12 jul 2026'],['endcustomer','A confirmar','Provável experiência voltada ao cliente final.','attention',true,'endcustomer.lugarerrado.com','12 jul 2026'],['partnership','A confirmar','Provável área de parcerias e relacionamento.','attention',true,'partnership.lugarerrado.com','12 jul 2026'],['embeddedsearchengine','A confirmar','Provável mecanismo de busca embutido em outros produtos.','attention',true,'embeddedsearchengine.lugarerrado.com','12 jul 2026'],['documentation','A confirmar','Provável documentação técnica ou de produto.','attention',true,'documentation.lugarerrado.com','12 jul 2026'],['teams','A confirmar','Provável área de times, colaboração ou organizações.','attention',true,'teams.lugarerrado.com','12 jul 2026'],['insights','A confirmar','Provável painel de métricas, análises ou insights.','attention',true,'insights.lugarerrado.com','12 jul 2026'],['test','Arquivo / atenção','Certificado público recente, mas a rota respondeu 404 na verificação.','attention',false,'test.lugarerrado.com','23 jul 2026']];
-const events=[['31 jul 2026','gossip','Novo sinal público','Certificado emitido para gossip; o projeto também já tem arquivo diário local.'],['30 jul 2026','training','Novo sinal público','Certificado emitido para training; a página respondeu com conteúdo de aprendizagem.'],['23 jul 2026','test','Mudança / atenção','test apareceu em certificado SNI da Cloudflare, mas retornou 404 na verificação atual.'],['12 jul 2026','vários hosts','Expansão do mapa','Uma rodada de certificados passou a registrar 15 áreas nomeadas do ecossistema.'],['05 jul 2026','www','Entrada principal','www apareceu com certificado próprio e respondeu como porta de entrada do MoldeLab.'],['29 jun 2026','about','Primeiro marco visível','about apareceu como página de apresentação; também marca o primeiro certificado desta rodada.']];
-const cards=document.querySelector('#cards'),timeline=document.querySelector('#timeline');let filter='all';
-function render(){const q=document.querySelector('#search').value.toLowerCase();const shown=hosts.filter(h=>(filter==='all'||h[3]===filter||(filter==='online'&&h[4]))&&(`${h[0]} ${h[1]} ${h[2]}`.toLowerCase().includes(q)));cards.innerHTML=shown.map(h=>`<article class="card"><div class="card-top"><span class="tag">${h[1]}</span><span class="status ${h[4]?'':'off'}">${h[4]?'respondendo':'404 / atenção'}</span></div><h3>${h[0]}</h3><p>${h[2]}</p><div class="card-foot"><span>cert. ${h[6]}</span><a href="https://${h[0]}.lugarerrado.com" target="_blank" rel="noreferrer">abrir ↗</a></div></article>`).join('');document.querySelector('#empty').hidden=shown.length>0}
-timeline.innerHTML=events.map(e=>`<div class="event"><span class="event-date">${e[0]}</span><p><strong>${e[2]}</strong><br>${e[3]}</p><span class="event-host">${e[1]}</span></div>`).join('');document.querySelector('#search').addEventListener('input',render);document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;render()}));render();
+const cards = document.querySelector('#cards');
+const timeline = document.querySelector('#timeline');
+let filter = 'all';
+let inventory = { hosts: [], events: [] };
+
+function render() {
+  const query = document.querySelector('#search').value.toLowerCase();
+  const activeHosts = inventory.hosts.filter(host => host.active !== false);
+  const shown = activeHosts.filter(host => {
+    const matchesFilter = filter === 'all' || host.category === filter || (filter === 'online' && host.online === true);
+    return matchesFilter && `${host.host} ${host.category} ${host.description}`.toLowerCase().includes(query);
+  });
+  cards.innerHTML = shown.map(host => {
+    const state = host.online === true ? 'respondendo' : host.online === false ? '404 / atenção' : 'DNS detectado';
+    return `<article class="card"><div class="card-top"><span class="tag">${host.categoryLabel}</span><span class="status ${host.online === true ? '' : 'off'}">${state}</span></div><h3>${host.host}</h3><p>${host.description}</p><div class="card-foot"><span>visto ${host.lastSeen || '—'}</span><a href="https://${host.host}.lugarerrado.com" target="_blank" rel="noreferrer">abrir ↗</a></div></article>`;
+  }).join('');
+  document.querySelector('#empty').hidden = shown.length > 0;
+  document.querySelector('#total-count').textContent = activeHosts.length;
+  document.querySelector('#online-count').textContent = activeHosts.filter(host => host.online === true).length;
+  document.querySelector('#known-count').textContent = activeHosts.filter(host => host.category === 'known').length;
+  timeline.innerHTML = (inventory.events || []).map(event => `<div class="event"><span class="event-date">${event.date}</span><p><strong>${event.title}</strong><br>${event.description}</p><span class="event-host">${event.host}</span></div>`).join('');
+}
+
+document.querySelector('#search').addEventListener('input', render);
+document.querySelectorAll('.filter').forEach(button => button.addEventListener('click', () => {
+  document.querySelectorAll('.filter').forEach(item => item.classList.remove('active'));
+  button.classList.add('active');
+  filter = button.dataset.filter;
+  render();
+}));
+
+fetch('./data/subdomains.json').then(response => response.json()).then(data => { inventory = data; render(); }).catch(() => render());
