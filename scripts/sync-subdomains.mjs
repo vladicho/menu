@@ -1,9 +1,9 @@
 import { readFile, writeFile } from 'node:fs/promises';
 const zone = 'lugarerrado.com';
 const owner = 'vladicho';
-const token = process.env.CLOUDFLARE_API_TOKEN;
-const zoneId = process.env.CLOUDFLARE_ZONE_ID;
-const githubToken = process.env.GITHUB_TOKEN;
+const token = process.env.CLOUDFLARE_API_TOKEN?.trim();
+const zoneId = process.env.CLOUDFLARE_ZONE_ID?.trim();
+const githubToken = process.env.GITHUB_TOKEN?.trim();
 if (!token || !zoneId || !githubToken) throw new Error('CLOUDFLARE_API_TOKEN, CLOUDFLARE_ZONE_ID e GITHUB_TOKEN são obrigatórios.');
 const headers = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' };
 const githubHeaders = { Authorization: `Bearer ${githubToken}`, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' };
