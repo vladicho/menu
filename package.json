@@ -1,0 +1,11 @@
+{
+  "name": "lugarerrado-menu",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "capture-previews": "node scripts/capture-previews.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.54.2"
+  }
+}

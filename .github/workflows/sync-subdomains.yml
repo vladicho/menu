@@ -13,15 +13,22 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
+      - name: Install preview renderer
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
       - name: Read Cloudflare DNS and update inventory
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/sync-subdomains.mjs
+      - name: Capture current site previews
+        run: npm run capture-previews
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/subdomains.json
+          git add data/subdomains.json previews
           git diff --cached --quiet || (git commit -m "chore: sync subdomain inventory" && git push)

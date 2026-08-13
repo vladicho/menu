@@ -58,5 +58,5 @@ for (const old of previous.values()) if (!names.includes(old.host)) previous.set
 const newNames = names.filter(name => !current.hosts.some(host => host.host === name));
 const events = [...(current.events || [])];
 for (const host of newNames) events.unshift({ date: today, host, title: 'Novo subdomínio detectado', description: 'O DNS do Cloudflare passou a registrar este host. A função será descrita a partir do README do repositório correspondente.' });
-await writeFile('data/subdomains.json', `${JSON.stringify({ updatedAt: today, hosts: [...previous.values()].sort((a, b) => a.host.localeCompare(b.host)), events: events.slice(0, 100) }, null, 2)}\n`);
+await writeFile('data/subdomains.json', `${JSON.stringify({ updatedAt: today, previewsUpdatedAt: current.previewsUpdatedAt || null, hosts: [...previous.values()].sort((a, b) => a.host.localeCompare(b.host)), events: events.slice(0, 100) }, null, 2)}\n`);
 console.log(`Inventário atualizado: ${names.length} DNS ativos; ${repos.length} repos analisados.`);
