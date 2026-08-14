@@ -1,15 +1,14 @@
 {
   "updatedAt": "2026-08-14",
-  "previewsUpdatedAt": "2026-08-14",
   "hosts": [
     {
       "host": "about",
       "category": "known",
       "categoryLabel": "Apresentação",
       "description": "Landing page do MoldeLab: digitalização e encaixe de moldes.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": null
     },
     {
@@ -17,9 +16,9 @@
       "category": "attention",
       "categoryLabel": "A confirmar",
       "description": "Provável painel administrativo interno. Acesso deve ser protegido.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": null
     },
     {
@@ -27,9 +26,9 @@
       "category": "attention",
       "categoryLabel": "A confirmar",
       "description": "Provável catálogo ou distribuição de aplicações.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": null
     },
     {
@@ -37,9 +36,9 @@
       "category": "attention",
       "categoryLabel": "A confirmar",
       "description": "Provável área de desafios, testes ou exercícios do ecossistema.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": null
     },
     {
@@ -47,7 +46,7 @@
       "category": "attention",
       "categoryLabel": "A confirmar",
       "description": "Subdomínio detectado no DNS; função ainda não documentada.",
-      "online": false,
+      "online": null,
       "active": true,
       "lastSeen": "2026-08-14",
       "repoUrl": null
@@ -57,9 +56,9 @@
       "category": "attention",
       "categoryLabel": "A confirmar",
       "description": "Provável documentação técnica ou de produto.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": null
     },
     {
@@ -67,9 +66,9 @@
       "category": "attention",
       "categoryLabel": "A confirmar",
       "description": "Provável mecanismo de busca embutido em outros produtos.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": null
     },
     {
@@ -77,9 +76,9 @@
       "category": "attention",
       "categoryLabel": "A confirmar",
       "description": "Provável experiência voltada ao cliente final.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": null
     },
     {
@@ -87,9 +86,9 @@
       "category": "attention",
       "categoryLabel": "A confirmar",
       "description": "Provável feed ou ingestão de conteúdo; função ainda precisa ser documentada.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": null
     },
     {
@@ -97,9 +96,9 @@
       "category": "known",
       "categoryLabel": "Conteúdo",
       "description": "Arquivo diário de descobertas públicas das áreas de entretenimento da Unitel.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": "https://github.com/vladicho/gossip"
     },
     {
@@ -107,9 +106,9 @@
       "category": "attention",
       "categoryLabel": "A confirmar",
       "description": "Provável ponto de entrada ou hub de ferramentas.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": null
     },
     {
@@ -117,9 +116,9 @@
       "category": "attention",
       "categoryLabel": "A confirmar",
       "description": "Provável painel de métricas, análises ou insights.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": null
     },
     {
@@ -127,9 +126,9 @@
       "category": "attention",
       "categoryLabel": "A confirmar",
       "description": "Provável área de aprendizagem ou trilhas de conteúdo.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": null
     },
     {
@@ -137,9 +136,9 @@
       "category": "attention",
       "categoryLabel": "A confirmar",
       "description": "Provável área comercial, marketplace ou catálogo de ofertas.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": null
     },
     {
@@ -147,9 +146,9 @@
       "category": "attention",
       "categoryLabel": "A confirmar",
       "description": "Subdomínio detectado no DNS; função ainda não documentada.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": null
     },
     {
@@ -157,9 +156,9 @@
       "category": "known",
       "categoryLabel": "Projeto GitHub",
       "description": "Copy",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": "https://github.com/vladicho/Mitlicense"
     },
     {
@@ -167,9 +166,9 @@
       "category": "attention",
       "categoryLabel": "A confirmar",
       "description": "Provável área de rede, integrações ou conexão entre serviços.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": null
     },
     {
@@ -177,9 +176,9 @@
       "category": "attention",
       "categoryLabel": "A confirmar",
       "description": "Subdomínio detectado no DNS; função ainda não documentada.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": null
     },
     {
@@ -187,9 +186,9 @@
       "category": "attention",
       "categoryLabel": "A confirmar",
       "description": "Provável área de parcerias e relacionamento.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": null
     },
     {
@@ -197,9 +196,9 @@
       "category": "attention",
       "categoryLabel": "A confirmar",
       "description": "Subdomínio detectado no DNS; função ainda não documentada.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": null
     },
     {
@@ -207,9 +206,9 @@
       "category": "attention",
       "categoryLabel": "A confirmar",
       "description": "Provável área de times, colaboração ou organizações.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": null
     },
     {
@@ -219,7 +218,7 @@
       "description": "Certificado público recente, mas a rota respondeu 404 na verificação.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-12",
       "repoUrl": null
     },
     {
@@ -227,9 +226,9 @@
       "category": "known",
       "categoryLabel": "Aprendizado",
       "description": "Questionário interativo em Astro sobre pseudocódigo, algoritmos e lógica de programação.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": "https://github.com/vladicho/training"
     },
     {
@@ -237,9 +236,9 @@
       "category": "attention",
       "categoryLabel": "A confirmar",
       "description": "Provável central de diagnóstico e resolução de problemas.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": null
     },
     {
@@ -247,9 +246,9 @@
       "category": "known",
       "categoryLabel": "Entrada principal",
       "description": "A porta de login do MoldeLab, o produto central do domínio.",
-      "online": false,
+      "online": true,
       "active": true,
-      "lastSeen": "2026-08-14",
+      "lastSeen": "2026-08-13",
       "repoUrl": null
     }
   ],
@@ -320,5 +319,7 @@
       "title": "Primeiro marco visível",
       "description": "about apareceu como página de apresentação; também marca o primeiro certificado desta rodada."
     }
-  ]
+  ],
+  "previewsUpdatedAt": "2026-08-13"
 }
+
