@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-13",
-  "previewsUpdatedAt": "2026-08-13",
+  "updatedAt": "2026-08-14",
+  "previewsUpdatedAt": "2026-08-14",
   "hosts": [
     {
       "host": "about",
@@ -9,7 +9,7 @@
       "description": "Landing page do MoldeLab: digitalização e encaixe de moldes.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     },
     {
@@ -19,7 +19,7 @@
       "description": "Provável painel administrativo interno. Acesso deve ser protegido.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     },
     {
@@ -29,7 +29,7 @@
       "description": "Provável catálogo ou distribuição de aplicações.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     },
     {
@@ -39,7 +39,17 @@
       "description": "Provável área de desafios, testes ou exercícios do ecossistema.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
+      "repoUrl": null
+    },
+    {
+      "host": "cutting",
+      "category": "attention",
+      "categoryLabel": "A confirmar",
+      "description": "Subdomínio detectado no DNS; função ainda não documentada.",
+      "online": false,
+      "active": true,
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     },
     {
@@ -49,7 +59,7 @@
       "description": "Provável documentação técnica ou de produto.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     },
     {
@@ -59,7 +69,7 @@
       "description": "Provável mecanismo de busca embutido em outros produtos.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     },
     {
@@ -69,7 +79,7 @@
       "description": "Provável experiência voltada ao cliente final.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     },
     {
@@ -79,7 +89,7 @@
       "description": "Provável feed ou ingestão de conteúdo; função ainda precisa ser documentada.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     },
     {
@@ -89,7 +99,7 @@
       "description": "Arquivo diário de descobertas públicas das áreas de entretenimento da Unitel.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": "https://github.com/vladicho/gossip"
     },
     {
@@ -99,7 +109,7 @@
       "description": "Provável ponto de entrada ou hub de ferramentas.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     },
     {
@@ -109,7 +119,7 @@
       "description": "Provável painel de métricas, análises ou insights.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     },
     {
@@ -119,7 +129,7 @@
       "description": "Provável área de aprendizagem ou trilhas de conteúdo.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     },
     {
@@ -129,7 +139,7 @@
       "description": "Provável área comercial, marketplace ou catálogo de ofertas.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     },
     {
@@ -139,7 +149,7 @@
       "description": "Subdomínio detectado no DNS; função ainda não documentada.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     },
     {
@@ -149,7 +159,7 @@
       "description": "Copy",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": "https://github.com/vladicho/Mitlicense"
     },
     {
@@ -159,7 +169,7 @@
       "description": "Provável área de rede, integrações ou conexão entre serviços.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     },
     {
@@ -169,7 +179,7 @@
       "description": "Subdomínio detectado no DNS; função ainda não documentada.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     },
     {
@@ -179,7 +189,7 @@
       "description": "Provável área de parcerias e relacionamento.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     },
     {
@@ -189,7 +199,7 @@
       "description": "Subdomínio detectado no DNS; função ainda não documentada.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     },
     {
@@ -199,7 +209,7 @@
       "description": "Provável área de times, colaboração ou organizações.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     },
     {
@@ -209,7 +219,7 @@
       "description": "Certificado público recente, mas a rota respondeu 404 na verificação.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     },
     {
@@ -219,7 +229,7 @@
       "description": "Questionário interativo em Astro sobre pseudocódigo, algoritmos e lógica de programação.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": "https://github.com/vladicho/training"
     },
     {
@@ -229,7 +239,7 @@
       "description": "Provável central de diagnóstico e resolução de problemas.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     },
     {
@@ -239,11 +249,17 @@
       "description": "A porta de login do MoldeLab, o produto central do domínio.",
       "online": false,
       "active": true,
-      "lastSeen": "2026-08-13",
+      "lastSeen": "2026-08-14",
       "repoUrl": null
     }
   ],
   "events": [
+    {
+      "date": "2026-08-14",
+      "host": "cutting",
+      "title": "Novo subdomínio detectado",
+      "description": "O DNS do Cloudflare passou a registrar este host. A função será descrita a partir do README do repositório correspondente."
+    },
     {
       "date": "2026-08-03",
       "host": "mitlicense",
